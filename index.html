@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>GIS Projects Portal</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Tahoma, Arial;
+    background:#061f70;
+}
+
+.hero{
+    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpMi2MNk7GkSO4RSocY0Qr8mzDo8JIgLFFlXmLC3zISA&s=10");
+    background-size:cover;
+    background-position:center;
+    color:rgb(203, 187, 187);
+    text-align:center;
+    padding: 40px;px 20px;
+}
+
+.hero h1{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.hero p{
+    font-size:20px;
+}
+
+.container{
+    width:90%;
+    max-width:1400px;
+    margin:auto;
+    padding:40px 0;
+}
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:rgb(19, 1, 1);
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.card h3{
+    color:#e6e9ed;
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#7c9283;
+    margin-bottom:15px;
+}
+
+.btn{
+    display:inline-block;
+    background:#0078d4;
+    color:white;
+    text-decoration:none;
+    padding:10px 20px;
+    border-radius:8px;
+}
+
+footer{
+    background:#e9eaec;
+    color:rgb(4, 6, 0);
+    text-align:center;
+    padding:10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<section class="hero">
+    <div class="title-wrapper">
+
+        <img style="height: 120PX;" src="المصرية الكويتية.png" alt="Company Logo" class="logo">
+
+        <h1>المنصةالرقمية لشبكات مرافق المدن العمرانية الجديدة</h1>
+
+    </div>
+
+    <p>الشركة المصرية الكويتية لنظم المعلومات الجغرافية </p>
+</section>
+
+<div class="container">
+
+<div class="projects">
+
+<div class="card">
+<img src="مارينا.jpg">
+<div class="card-content">
+<h3>مدينة مارينا الجديدة</h3>
+<p>شبكات مرافق البنية التحتية</p>
+<a href="https://www.arcgis.com/apps/instant/basic/index.html?appid=2d50d1605cce482fb198c2233b5ac781" class="btn">عرض المشروع</a>
+</div>
+</div>
+
+<div class="card">
+<img src="المنيا الجديدة.jpg">
+<div class="card-content">
+<h3>مدينة المنيا الجديدة</h3>
+<p>شبكات مرافق البنية التحتية</p>
+<a href="https://www.arcgis.com/apps/instant/basic/index.html?appid=263ee1f8f6c3413980d957790f5088da" class="btn">عرض المشروع</a>
+</div>
+</div>
+
+
+<div class="card">
+<img src="سوهاج.jpg">
+<div class="card-content">
+<h3>مدينة سوهاج الجديدة</h3>
+<p>شبكات مرافق البنية التحتية</p>
+<a href="https://www.arcgis.com/apps/instant/basic/index.html?appid=1973143b60cd46ed988b26198bdb75dc" class="btn">عرض المشروع</a>
+</div>
+</div>
+
+<div class="card">
+<img src="قنا.jpg">
+<div class="card-content">
+<h3>مدينة قنا الجديدة</h3>
+<p>شبكات مرافق البنية التحتية</p>
+<a href="https://www.arcgis.com/apps/instant/basic/index.html?appid=fcb30ba98ccc4b7eb3649e922fa331fb" class="btn">عرض المشروع</a>
+</div>
+</div>
+
+</div>
+
+</div>
+
+
+<footer>
+    <H1 style="font-size: larger;">تصميم مهندس حسام محمد</H1>
+© 2026 GIS Projects Portal
+</footer>
+</body>
+</html>
