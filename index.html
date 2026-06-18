@@ -1,183 +1,269 @@
 <!DOCTYPE html>
-
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Premium Corporate Pro</title>
 
-<title>GIS Projects Portal</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
 
 <style>
-
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Cairo,sans-serif
 }
 
 body{
-    font-family:Tahoma, Arial;
-    background:#e4e1e1;
-    
+background:#f4f7fb;
+color:#222
 }
 
+/* HEADER */
+header{
+position:fixed;
+top:0;
+width:100%;
+z-index:999;
+background:#08284a;
+padding:18px 6%;
+display:flex;
+align-items:center;
+justify-content:space-between;
+direction:ltr; /* للتحكم في الاتجاه */
+}
+
+.logo{
+color:#fff;
+font-size:34px;
+font-weight:900;
+order:1;
+}
+
+nav{
+flex:1;
+display:flex;
+justify-content:center;
+gap:20px;
+order:2;
+}
+
+nav a{
+color:#fff;
+text-decoration:none;
+margin:0 12px;
+font-weight:500;
+}
+
+/* spacer */
+.right-space{
+width:120px;
+order:3;
+}
+
+/* HERO */
 .hero{
-    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
-    url("https://pub-4fc6abf6ad7c45c78a8359ce90cde2eb.r2.dev/images/watermarkd2904dcf12ba69ad24e2f24974245662.jpg");
-    background-size:cover;
-    background-position:center;
-    color:rgb(255, 255, 255);
-    text-align:center;
-    padding: 20px 5px;
+height:100vh;
+background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1800') center/cover;
+display:flex;
+align-items:center
+}
+
+.hero-content{
+margin-right:8%;
+max-width:800px;
+color:white
 }
 
 .hero h1{
-    font-size:42px;
-    margin-bottom:10px;
+font-size:70px
 }
 
 .hero p{
-    font-size:20px;
-}
-
-.container{
-    width:90%;
-    max-width:1400px;
-    margin:auto;
-    padding:40px 0;
-}
-
-.projects{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:25px;
-}
-
-.card{
-    background:rgb(19, 1, 1);
-    border-radius:15px;
-    overflow:hidden;
-    box-shadow:0 5px 20px rgba(0,0,0,.15);
-    transition:.3s;
-}
-
-.card:hover{
-    transform:translateY(-8px);
-}
-
-.card img{
-    width:100%;
-    height:220px;
-    object-fit:cover;
-}
-
-.card-content{
-    padding:20px;
-}
-
-.card h3{
-    color:#e6e9ed;
-    margin-bottom:10px;
-}
-
-.card p{
-    color:#7c9283;
-    margin-bottom:15px;
+font-size:24px;
+line-height:1.8;
+margin:20px 0
 }
 
 .btn{
-    display:inline-block;
-    background:#0078d4;
-    color:white;
-    text-decoration:none;
-    padding:10px 20px;
-    border-radius:8px;
+display:inline-block;
+background:#f7941d;
+color:#fff;
+padding:15px 35px;
+border-radius:8px;
+text-decoration:none
+}
+
+/* STATS */
+.stats{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+padding:50px 8%;
+background:#08284a;
+color:#fff;
+text-align:center
+}
+
+.stats h2{
+font-size:46px
+}
+
+/* SECTIONS */
+.section{
+padding:90px 8%
+}
+
+.title{
+text-align:center;
+color:#08284a;
+font-size:44px;
+margin-bottom:50px
+}
+
+.cards,.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px
+}
+
+.card,.project{
+background:white;
+padding:30px;
+border-radius:18px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+transition:.3s
+}
+
+.card:hover,.project:hover{
+transform:translateY(-10px)
+}
+
+.project img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:10px
+}
+
+.contact{
+background:#08284a;
+color:#fff;
+text-align:center
 }
 
 footer{
-    background:#140364;
-    color:rgb(241, 241, 242);
-    text-align:center;
-    padding:10px;
+background:#041526;
+color:#fff;
+padding:30px;
+text-align:center
 }
 
+/* RESPONSIVE */
+@media(max-width:768px){
+.hero h1{font-size:42px}
+.stats{grid-template-columns:repeat(2,1fr)}
+}
 </style>
-
 </head>
 
 <body>
 
+<header>
+<div class="logo">Egyptian Kuwaiti
+    
+</div> 
+
+<nav>
+    <a href="https://hossam991144.github.io/Completion-percentage/">متابعة المشاريع</a>
+    <a href="#">الصفحة الرئيسية</a>
+</nav>
+
+<div class="right-space"></div>
+</header>
+
 <section class="hero">
-    <div class="title-wrapper">
-
-        <img style="height: 120PX;" src="المصرية الكويتية.png" alt="Company Logo" class="logo">
-
-        <h1>المنصةالرقمية لمشاريع مرافق المدن العمرانية الجديدة</h1>
-
-    </div>
-
-    <p>الشركة المصرية الكويتية لنظم المعلومات الجغرافية </p>
+<div class="hero-content">
+<h1>المنصة الرقمية لمتابعة وعرض المشاريع </h1>
+<p> الشركة المصرية الكويتية لنظم المعلومات الجغرافية وكشف المرافق</p>
+<a href="http://ekc-egypt.com/?fbclid=IwY2xjawSgrNRleHRuA2FlbQIxMABicmlkETFzZTdTaHZBNE9YOWNXZGV0c3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHiW_viUbqK2F3BFVMcEjk6iUY7sk10-Uj7iuYgzNVXPlHRuZ-a0s8K0yObk4_aem_K5wQCaacKbEcgLQzoHoKpg" class="btn">استكشف المزيد</a>
+</div>
 </section>
 
-<div class="container">
+<section class="stats">
+<div><h2>500+</h2><p>عميل</p></div>
+<div><h2>120+</h2><p>مشروع</p></div>
+<div><h2>25</h2><p>سنة خبرة</p></div>
+<div><h2>30</h2><p>دولة</p></div>
+</section>
+
+<section class="section">
+<h2 class="title">خدماتنا</h2>
+<div class="cards">
+<div class="card"><h3>أعمال الرفع المساحي</h3><p>تنفيذ كافة اعمال الرفع المساحي.</p></div>
+<div class="card"><h3>أعمال الكشف</h3><p>كشف مرافق شبكات البنية التحتية.</p></div>
+<div class="card"><h3>تحليل بيانات</h3><p>تقارير ولوحات معلومات احترافية.</p></div>
+<div class="card"><h3>أعمال التقنين</h3><p>تنفيذ أعمال الرفع  المساحة لتقنين ممتلكات الدولة</p></div>
+</div>
+</section>
+
+<section class="section">
+<h2 class="title">أحدث المشاريع</h2>
 
 <div class="projects">
 
-    <div class="card">
-<img src="لوجو المنصورة الجديدة.jpeg">
-<div class="card-content">
-<h3>مدينة المنصورة الجديدة</h3>
-<p>شبكات مرافق البنية التحتية</p>
-<a href="https://www.arcgis.com/apps/instant/basic/index.html?appid=7abc896774ae47908f6699b87341be95" class="btn">عرض المشروع</a>
-</div>
-</div>
+<a href="https://www.arcgis.com/apps/instant/basic/index.html?appid=7abc896774ae47908f6699b87341be95" class="project">
+    <img src="لوجو المنصورة الجديدة.jpeg">
+    <h3>مدينة المنصورة الجديدة</h3>
+</a>
 
+<a href="https://www.arcgis.com/apps/instant/basic/index.html?appid=2d50d1605cce482fb198c2233b5ac781" class="project">
+    <img src="مارينا.jpg">
+    <h3>مدينة مارينا الجديدة</h3>
+</a>
 
-<div class="card">
-<img src="مارينا.jpg">
-<div class="card-content">
-<h3>مدينة مارينا الجديدة</h3>
-<p>شبكات مرافق البنية التحتية</p>
-<a href="https://www.arcgis.com/apps/instant/basic/index.html?appid=2d50d1605cce482fb198c2233b5ac781" class="btn">عرض المشروع</a>
-</div>
-</div>
+<a href="" class="project">
+    <img src="https://picsum.photos/600/400?3">
+    <h3>مدينة بدر الجديدة</h3>
 
-<div class="card">
-<img src="المنيا الجديدة.jpg">
-<div class="card-content">
-<h3>مدينة المنيا الجديدة</h3>
-<p>شبكات مرافق البنية التحتية</p>
-<a href="https://www.arcgis.com/apps/instant/basic/index.html?appid=263ee1f8f6c3413980d957790f5088da" class="btn">عرض المشروع</a>
-</div>
-</div>
+<a href="https://www.arcgis.com/apps/instant/basic/index.html?appid=263ee1f8f6c3413980d957790f5088da" class="project">
+    <img src="المنيا الجديدة.jpg">
+    <h3>مدينة المنيا الجديدة</h3>
+</a>
 
+<a href="https://www.arcgis.com/apps/instant/basic/index.html?appid=1973143b60cd46ed988b26198bdb75dc" class="project">
+    <img src="سوهاج.jpg">
+    <h3>مدينة سوهاج الجديدة</h3>
+    
+    <a href="https://www.arcgis.com/apps/instant/basic/index.html?appid=fcb30ba98ccc4b7eb3649e922fa331fb" class="project">
+    <img src="قنا.jpg">
+    <h3>مدينة قنا الجديدة</h3>
+</a>
 
-<div class="card">
-<img src="سوهاج.jpg">
-<div class="card-content">
-<h3>مدينة سوهاج الجديدة</h3>
-<p>شبكات مرافق البنية التحتية</p>
-<a href="https://www.arcgis.com/apps/instant/basic/index.html?appid=1973143b60cd46ed988b26198bdb75dc" class="btn">عرض المشروع</a>
-</div>
-</div>
-
-<div class="card">
-<img src="قنا.jpg">
-<div class="card-content">
-<h3>مدينة قنا الجديدة</h3>
-<p>شبكات مرافق البنية التحتية</p>
-<a href="https://www.arcgis.com/apps/instant/basic/index.html?appid=fcb30ba98ccc4b7eb3649e922fa331fb" class="btn">عرض المشروع</a>
-</div>
-</div>
+<a href="" class="project">
+    <img src="طيبة.jpg">
+    <h3>مدينة طيبة الجديدة</h3>
+</a>
 
 </div>
+</section>
 
-</div>
-
+<section class="section contact">
+<h2>تواصل معنا</h2>
+<br>
+<p>
+info@ekc-egypt.net</p>
+<p>
+‏02 24154341‏</p>
+</section>
+<section class="متابعة المشاريع">
+    <a href="https://hossam991144.github.io/Completion-percentage/"></a>
+</section>
 
 <footer>
-    <H1 style="font-size: larger;">تصميم مهندس حسام محمد</H1>
-© 2027 GIS Projects Portal
+© 2026 Premium Corporate Pro
 </footer>
+
 </body>
 </html>
